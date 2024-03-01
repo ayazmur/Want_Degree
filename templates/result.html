@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Query Result</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>SQL Query Result</h1>
+    <p>Query: {{ query }}</p>
+    <table>
+      <tr>
+        {% for column in column_names %}
+        <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+      {% for row in result %}
+      <tr>
+        {% for value in row %}
+        <td>{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/">Back to Query Form</a>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

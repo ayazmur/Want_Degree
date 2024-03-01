@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Query Form</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>SQL Query Form</h1>
+    <form id="queryForm">
+      <textarea id="query" name="query" rows="5" cols="50"></textarea>
+      <br />
+      <button type="submit">Execute Query</button>
+    </form>
+    <div id="result"></div>
+    <a href="/add-doctor">Add Doctor</a>
+    <a href="/add-patient">Add Patient</a>
+    <a href="/add-appointment">Add Appointment</a>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
